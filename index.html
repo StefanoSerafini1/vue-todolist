@@ -24,17 +24,9 @@
        </div>
      <div class="lista">
        <!-- contenitore zona lista -->
-         <div class="attivita">
-           <p class="element">Fare spesa</p>
-           <i class="fas fa-times"></i>
-         </div>
-       <div class="attivita">
-           <p class="element">Portare fuori il cane</p>
-           <i class="fas fa-times"></i>
-       </div>
        <div class="attivita">
          <p class="element"></p>
-         <i class="fas fa-times"></i>
+         <i @click="cancella(attivita)"  class="fas fa-times"></i>
        </div>
      </div>
     </div>
