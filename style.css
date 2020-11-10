@@ -7,24 +7,22 @@
 
 body{
     font-family: '', sans-serif;
-    background-color: #ffff;
-
+    background-image: url('imgsfondo.jpg');
 }
 
 /* titolo */
 h1{
     font-family: '', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     margin-bottom: 20px;
-    color: #fa8f20;
+    color: #f6b013;
 }
 
 /* contenitore applicazione generale  */
 #tot{
     height: 100vh;
-    padding: 20px;
-    background-color: #f0f3dc;
+    padding: 40px;
 }
 
 .container{
