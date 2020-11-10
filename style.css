@@ -6,13 +6,13 @@
 }
 
 body{
-    font-family: '', sans-serif;
+    font-family: 'Indie Flower', cursive;
     background-image: url('imgsfondo.jpg');
 }
 
 /* titolo */
 h1{
-    font-family: '', sans-serif;
+    font-family: 'Permanent Marker', cursive;
     font-size: 40px;
     text-align: center;
     margin-bottom: 20px;
@@ -37,11 +37,12 @@ h1{
 }
 /* text */
 input{
+    font-family: 'Indie Flower', cursive;
     width: 300px;
     height: 30px;
     margin-right: 20px;
     padding: 5px 10px;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 5px;
     color:black;
     transition: background .3s;
@@ -55,6 +56,7 @@ input:focus{
 }
 /* bottone */
 button{
+    font-family: 'Indie Flower', cursive;
     padding: 5px 10px;
     background-color: #faf31af0;
     border: 1px solid #bbd723;
@@ -72,36 +74,34 @@ button:hover{
 }
 /* container lista tot */
 .lista{
-    margin:20px 0;
+    margin:20px ;
     padding: 20px;
     background-color: white;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 5px;
-}
-.lista .attivita{
     display: flex;
     height: 35px;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5px;
-    border-bottom: 1px solid black;
 }
 /* elemento */
 .element{
     color: black;
+    font-family: 'Indie Flower', cursive;
 }
 .element:hover{
   cursor: pointer;
+  border-bottom: 1px solid black;
 }
 /* i  container del elemento */
-.attivita i{
+.lista i{
     font-size: 20px;
     color: black;
     cursor: pointer;
     transition: transform .3s;
 }
 /* hover sulle croci della cancellazione */
-.attivita i:hover{
+.lista i:hover{
     transform: scale(1.3);
     color: #fa8f20;
 }
