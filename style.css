@@ -17,13 +17,14 @@ h1{
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
-    color: black;
+    color: #fa8f20;
 }
 
 /* contenitore applicazione generale  */
 #tot{
     height: 100vh;
     padding: 20px;
+    background-color: #f0f3dc;
 }
 
 .container{
@@ -57,17 +58,18 @@ input:focus{
 /* bottone */
 button{
     padding: 5px 10px;
-    background-color: yellow;
-    border: 2px solid #00F5D4;
+    background-color: #faf31af0;
+    border: 1px solid #bbd723;
     border-radius: 5px;
     cursor: pointer;
     color:black;
     transition: background .3s;
+    margin-right: 10px;
 }
 /* zona hover text e bottone*/
 input:hover,
 button:hover{
-    background-color: #ffff;
+    background-color: #fa8f20;
     color:black;
 }
 /* container lista tot */
@@ -90,6 +92,9 @@ button:hover{
 .element{
     color: black;
 }
+.element:hover{
+  cursor: pointer;
+}
 /* i  container del elemento */
 .attivita i{
     font-size: 20px;
@@ -100,5 +105,5 @@ button:hover{
 /* hover sulle croci della cancellazione */
 .attivita i:hover{
     transform: scale(1.3);
-    color: green;
+    color: #fa8f20;
 }
