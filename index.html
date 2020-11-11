@@ -27,9 +27,9 @@
        <!-- contenitore zona lista  -->
         <div class="lista">
          <ul>
-           <li class="attivita" v-for="attivita in lista">
+           <li class="attivita" v-for="(attivita,index) in attivita">
              <p>{{ attivita }}</p>
-             <i  class="fas fa-times"></i>
+             <i @click='cancAttivita(index)'  class="fas fa-times"></i>
            </li>
          </ul>
         </div>

@@ -5,23 +5,31 @@
 const todolist = new Vue ({
     el: '#tot',
     data: {
-        lista: [
-              'fare la spesa',
-              'buttare la spazzatura',
-              'studiare',
-              'controllare bollette'
+        index: 0,
+        attivita: [
+             'fare la spesa',
+             'buttare la spazzatura',
+             'studiare',
+             'controllare bollette'
         ],
-        nuovaAttivita: '',
+        nuovaAttivita: ''
     },
 
     methods: {
       //funzione per aggiunta nuova attivita
         aggAttivita() {
            if (this.nuovaAttivita.trim() != ''){
-               this.lista.push( this.nuovaAttivita );
+               this.attivita.push( this.nuovaAttivita );
 
                this.nuovaAttivita= '';
             }
+        },
+        cancAttivita(index){
+            this.attivita.splice(index,1);
+        },
+        submit() {
+          this.attivita.push(this.nuovaAttivita);
+          this.nuovaAttivita ='';
         }
     }
 
