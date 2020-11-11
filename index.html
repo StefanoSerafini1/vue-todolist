@@ -22,7 +22,7 @@
         <!-- contenitore parte aggiunta -->
          <input v-model="nuovaAttivita" @keyup.enter="aggAttivita" type="text" placeholder="Aggiungi un nuovo elemento alla lista">
          <button @click="aggAttivita">ADD</button>
-         <button>CANCEL</button>
+         <button @click="cancAll">DELETE ALL</button>
        </div>
        <!-- contenitore zona lista  -->
         <div class="lista">

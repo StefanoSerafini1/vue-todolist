@@ -27,6 +27,9 @@ const todolist = new Vue ({
         cancAttivita(index){
             this.attivita.splice(index,1);
         },
+        cancAll(attivita){
+            this.attivita.splice(attivita);
+        },
         submit() {
           this.attivita.push(this.nuovaAttivita);
           this.nuovaAttivita ='';
