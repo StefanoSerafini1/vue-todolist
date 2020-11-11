@@ -7,15 +7,14 @@
       <!-- da aggiungere link font vari -->
       <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-      <link href="" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
       <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
   </head>
   <body>
-    <!-- contenitore applicazione tot -->
+    <!--  contenitore applicazione tot -->
     <div id="tot">
-      <!-- contenitore -->
+      <!--  contenitore -->
       <div class="container">
        <h1>To Do List ...</h1>
        <div class="aggiungi">
@@ -24,7 +23,7 @@
          <button @click="aggAttivita">ADD</button>
          <button @click="cancAll">DELETE ALL</button>
        </div>
-       <!-- contenitore zona lista  -->
+       <!--   contenitore zona lista  -->
        <div class="lista">
          <ul>
            <li class="attivita" v-for="(attivita,index) in attivita">
@@ -35,9 +34,9 @@
        </div>
       </div>
     </div>
-<!--   link per js e vue.js   -->
+<!--   link  per js e vue.js   -->
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="myscript.js"></script>
-  </body>
+  </body>  
 </html>

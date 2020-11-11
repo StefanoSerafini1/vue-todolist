@@ -46,6 +46,7 @@ input{
     border-radius: 5px;
     color:black;
     transition: background .3s;
+    font-size: 18px;
 }
 input::placeholder{
     color:black;
@@ -88,6 +89,7 @@ button:hover{
 .attivita{
     color: black;
     font-family: 'Indie Flower', cursive;
+    font-size: 20px;
 }
 .attivita :hover{
   cursor: pointer;
@@ -106,4 +108,58 @@ button:hover{
     color: #fa8f20;
 }
 
-/* zona jquery */
+/* zona media query */
+@media screen and (max-width: 800px){
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        height: 100%;
+    }
+    /* zona aggiungi e bottone */
+    .aggiungi{
+        flex-wrap: wrap;
+    }
+
+    .aggiungi input {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        padding: 20px;
+        width:80%;
+        font-size: 18px;
+    }
+
+    .aggiungi button {
+        margin-right:10px;
+    }
+    /* zona lista e x */
+    .lista {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .lista i {
+        font-size: 18px;
+    }
+    .attivita{
+      font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+  /* titolo */
+  h1{
+    font-size: 30px;
+  }
+  /* bottoni */
+  .aggiungi button {
+      margin-right: 20px;
+      width: 25%;
+      padding: 5px;
+  }
+  .attivita{
+    font-size: 15px;
+  }
+}
