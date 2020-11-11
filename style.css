@@ -73,7 +73,7 @@ button:hover{
     color:black;
 }
 /* container lista tot */
-.lista{
+.lista .attivita{
     margin:20px ;
     padding: 20px;
     background-color: white;
@@ -85,23 +85,23 @@ button:hover{
     align-items: center;
 }
 /* elemento */
-.element{
+.attivita{
     color: black;
     font-family: 'Indie Flower', cursive;
 }
-.element:hover{
+.attivita :hover{
   cursor: pointer;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #fa8f20 ;
 }
 /* i  container del elemento */
-.lista i{
+.attivita i{
     font-size: 20px;
     color: black;
     cursor: pointer;
     transition: transform .3s;
 }
 /* hover sulle croci della cancellazione */
-.lista i:hover{
+.attivita i:hover{
     transform: scale(1.3);
     color: #fa8f20;
 }

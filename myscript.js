@@ -1,7 +1,9 @@
+//Creare un nuovo todo attraverso un campo di testo
+//Rimuovere uno specifico todo attraverso il click su un icona per la rimozione nel todo stesso
+
+
 const todolist = new Vue ({
-
     el: '#tot',
-
     data: {
         lista: [
               'fare la spesa',
@@ -9,14 +11,17 @@ const todolist = new Vue ({
               'studiare',
               'controllare bollette'
         ],
-
-        nuovaAttivita: ''
+        nuovaAttivita: '',
     },
 
     methods: {
+      //funzione per aggiunta nuova attivita
         aggAttivita() {
-        },
-        cancAttivita() {
+           if (this.nuovaAttivita.trim() != ''){
+               this.lista.push( this.nuovaAttivita );
+
+               this.nuovaAttivita= '';
+            }
         }
     }
 
