@@ -25,17 +25,17 @@
          <button @click="cancAll">DELETE ALL</button>
        </div>
        <!-- contenitore zona lista  -->
-        <div class="lista">
+       <div class="lista">
          <ul>
            <li class="attivita" v-for="(attivita,index) in attivita">
              <p>{{ attivita }}</p>
              <i @click='cancAttivita(index)'  class="fas fa-times"></i>
            </li>
          </ul>
-        </div>
+       </div>
       </div>
     </div>
-<!-- link per js e vue.js   -->
+<!--   link per js e vue.js   -->
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="myscript.js"></script>

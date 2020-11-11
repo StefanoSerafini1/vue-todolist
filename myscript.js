@@ -24,9 +24,11 @@ const todolist = new Vue ({
                this.nuovaAttivita= '';
             }
         },
+        //funzione per rimozione attivita attraverso la x
         cancAttivita(index){
             this.attivita.splice(index,1);
         },
+        //funzione per pulizia di tutte le attivita
         cancAll(attivita){
             this.attivita.splice(attivita);
         },
