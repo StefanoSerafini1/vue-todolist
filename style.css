@@ -155,6 +155,9 @@ button:hover{
     .lista i {
         font-size: 18px;
     }
+    .lista h2{
+      font-size: 15px;
+    }
     .attivita{
       font-size: 18px;
     }
@@ -174,5 +177,8 @@ button:hover{
   }
   .attivita{
     font-size: 15px;
+  }
+  .lista h2{
+    font-size: 10px;
   }
 }
