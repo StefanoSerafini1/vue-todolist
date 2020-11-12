@@ -85,6 +85,19 @@ button:hover{
     justify-content: space-between;
     align-items: center;
 }
+/* zona non ci sono todo nella lista */
+.lista h2{
+  margin:20px ;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  height: 35px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
 /* elemento */
 .attivita{
     color: black;

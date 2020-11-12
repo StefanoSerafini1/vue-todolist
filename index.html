@@ -25,12 +25,13 @@
        </div>
        <!--   contenitore zona lista  -->
        <div class="lista">
-         <ul>
+         <ul v-if="attivita.length > 0">
            <li class="attivita" v-for="(attivita,index) in attivita">
              <p>{{ attivita }}</p>
              <i @click='cancAttivita(index)'  class="fas fa-times"></i>
            </li>
          </ul>
+         <h2 v-else>NON CI SONO TODO NELLA LISTA</h2>
        </div>
       </div>
     </div>
@@ -38,5 +39,5 @@
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="myscript.js"></script>
-  </body>  
+  </body>
 </html>
